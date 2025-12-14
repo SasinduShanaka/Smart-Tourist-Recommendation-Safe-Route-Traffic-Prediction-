@@ -1,0 +1,146 @@
+place,travel_style,weather,budget,trip_duration,crowd_level,best_season,activities,rating
+Wadduwa,Relaxation,Warm,Medium,Short,Moderate,Dry,Relaxing,4.4
+Payagala,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.2
+Induruwa,Relaxation,Warm,Medium,Short,Low,Dry,Relaxing,4.3
+Maggona,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.1
+Beruwala Lighthouse,Cultural,Warm,Low,Short,Low,Dry,Sightseeing,4.3
+Kalpitiya Lagoon,Wildlife,Warm,Low,Medium,Low,Dry,Sightseeing,4.4
+Talawila Beach,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.3
+Kandakuliya Beach,Adventure,Warm,Low,Medium,Low,Dry,Surfing,4.5
+Norochcholai Beach,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.2
+Anawilundawa Wetland,Wildlife,Warm,Low,Medium,Low,Dry,Sightseeing,4.5
+Melsiripura,Cultural,Warm,Low,Short,Low,Dry,Sightseeing,4.2
+Ridi Viharaya,Cultural,Warm,Low,Short,Moderate,Dry,Sightseeing,4.5
+Ibbankatuwa Megalithic Tombs,Cultural,Warm,Low,Short,Low,Dry,Sightseeing,4.4
+Nalanda Gedige,Cultural,Warm,Low,Short,Low,Dry,Sightseeing,4.5
+Riverston Peak,Adventure,Cool,Low,Medium,Low,Dry,Hiking,4.7
+Sera Ella Falls,Adventure,Cool,Low,Short,Low,Dry,Hiking,4.6
+Pitawala Pathana,Adventure,Cool,Low,Short,Moderate,Dry,Hiking,4.7
+Thelgamu Oya,Adventure,Cool,Low,Short,Low,Dry,Hiking,4.5
+Illukkumbura,Adventure,Cool,Low,Medium,Low,Dry,Hiking,4.6
+Deanston,Adventure,Cool,Low,Medium,Low,Dry,Hiking,4.5
+Thalpe Beach,Relaxation,Warm,Medium,Short,Moderate,Dry,Relaxing,4.4
+Jungle Beach Galle,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.6
+Rumassala Sanctuary,Wildlife,Warm,Low,Short,Moderate,Dry,Hiking,4.6
+Koggala Lake,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.4
+Madol Duwa,Cultural,Warm,Low,Short,Low,Dry,Sightseeing,4.3
+Weherahena Temple,Cultural,Warm,Low,Short,Moderate,Dry,Sightseeing,4.5
+Mulkirigala Rock Temple,Cultural,Warm,Low,Short,Moderate,Dry,Sightseeing,4.6
+Kalametiya Bird Sanctuary,Wildlife,Warm,Low,Medium,Low,Dry,Sightseeing,4.5
+Ussangoda National Park,Wildlife,Warm,Low,Short,Low,Dry,Sightseeing,4.4
+Godawaya Port Ruins,Cultural,Warm,Low,Short,Low,Dry,Sightseeing,4.3
+Seetha Eliya,Relaxation,Cold,Low,Short,Low,Dry,Relaxing,4.4
+Gregory Lake,Relaxation,Cool,Medium,Short,Crowded,Dry,Relaxing,4.6
+Hakgala Botanical Garden,Relaxation,Cool,Low,Short,Moderate,Dry,Relaxing,4.7
+Lover’s Leap Falls,Adventure,Cool,Low,Short,Moderate,Dry,Hiking,4.5
+Moon Plains,Adventure,Cool,Low,Short,Moderate,Dry,Hiking,4.6
+Bogoda Wooden Bridge,Cultural,Cool,Low,Short,Low,Wet,Sightseeing,4.4
+Dunhinda Falls,Adventure,Cool,Low,Short,Crowded,Wet,Hiking,4.7
+Namunukula Mountain,Adventure,Cold,Low,Long,Low,Dry,Hiking,4.8
+Demodara Nine Arch Bridge,Cultural,Cool,Low,Short,Crowded,Dry,Sightseeing,4.8
+Lipton’s Seat,Relaxation,Cool,Low,Short,Moderate,Dry,Relaxing,4.7
+Passara,Relaxation,Cool,Low,Short,Low,Wet,Relaxing,4.3
+Mahiyanganaya Hot Springs,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.4
+Rantembe Reservoir,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.3
+Loggal Oya,Adventure,Warm,Low,Medium,Low,Dry,Hiking,4.5
+Galaboda Falls,Adventure,Cool,Low,Short,Low,Wet,Hiking,4.6
+Hiriketiya Beach,Relaxation,Warm,Low,Short,Moderate,Dry,Relaxing,4.7
+Nilwella Beach,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.5
+Dickwella,Relaxation,Warm,Low,Short,Moderate,Dry,Relaxing,4.4
+Kudawella Blow Hole,Adventure,Warm,Low,Short,Moderate,Dry,Sightseeing,4.5
+Tangalle Lagoon,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.4
+Rekawa Beach,Wildlife,Warm,Low,Short,Low,Dry,Sightseeing,4.6
+Rekawa Turtle Conservation,Wildlife,Warm,Low,Short,Low,Dry,Sightseeing,4.7
+Kalametiya Lagoon,Wildlife,Warm,Low,Medium,Low,Dry,Sightseeing,4.6
+Udawalawa Reservoir,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.5
+Udawalawa Elephant Transit Home,Wildlife,Warm,Low,Short,Moderate,Dry,Sightseeing,4.7
+Balangoda,Relaxation,Cool,Low,Short,Low,Wet,Relaxing,4.3
+Belihuloya River,Adventure,Cool,Low,Short,Low,Wet,Hiking,4.5
+Suriyakanda,Adventure,Cool,Low,Medium,Low,Dry,Hiking,4.6
+Pahanthudawa Waterfall,Adventure,Cool,Low,Short,Low,Wet,Hiking,4.6
+Bopath Ella,Adventure,Cool,Low,Short,Moderate,Wet,Hiking,4.5
+Kuruwita Erathna Path,Adventure,Cool,Low,Medium,Moderate,Dry,Hiking,4.7
+Sri Pada View Point,Adventure,Cold,Low,Short,Crowded,Dry,Hiking,4.8
+Delhousie Town,Relaxation,Cold,Low,Short,Crowded,Dry,Relaxing,4.4
+Wangedigala,Adventure,Cool,Low,Medium,Low,Dry,Hiking,4.8
+Hawagala,Adventure,Cool,Low,Medium,Low,Dry,Hiking,4.7
+Ratnapura Town,Relaxation,Warm,Low,Short,Moderate,Wet,Relaxing,4.3
+Gem Museum Ratnapura,Cultural,Warm,Low,Short,Moderate,Wet,Sightseeing,4.4
+Udakanda View Point,Adventure,Warm,Low,Short,Low,Wet,Hiking,4.5
+Kalawana Forest Area,Wildlife,Warm,Low,Medium,Low,Wet,Hiking,4.6
+Wathurawa Waterfall,Adventure,Warm,Low,Short,Low,Wet,Hiking,4.5
+Kitulgala White Water Rafting,Adventure,Warm,Low,Short,Moderate,Wet,Hiking,4.8
+Makandawa Forest Reserve,Wildlife,Warm,Low,Medium,Low,Wet,Hiking,4.7
+Belilena Cave,Adventure,Warm,Low,Short,Moderate,Wet,Sightseeing,4.6
+Yatiyantota,Relaxation,Warm,Low,Short,Low,Wet,Relaxing,4.3
+Deraniyagala,Relaxation,Warm,Low,Short,Low,Wet,Relaxing,4.2
+Avissawella,Relaxation,Warm,Low,Short,Moderate,Wet,Relaxing,4.3
+Seethawaka Botanical Garden,Relaxation,Warm,Low,Short,Moderate,Wet,Relaxing,4.6
+Hanwella,Relaxation,Warm,Low,Short,Low,Wet,Relaxing,4.2
+Labugama Reservoir,Relaxation,Warm,Low,Short,Low,Wet,Relaxing,4.4
+Kalatuwawa Reservoir,Relaxation,Warm,Low,Short,Low,Wet,Relaxing,4.4
+Horagolla National Park,Wildlife,Warm,Low,Short,Low,Wet,Sightseeing,4.4
+Mirigama,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.2
+Veyangoda,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.2
+Divulapitiya,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.2
+Minuwangoda,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.2
+Katunayake Lagoon,Wildlife,Warm,Low,Short,Low,Dry,Sightseeing,4.3
+Seeduwa,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.1
+Ja-Ela,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.2
+Ekala,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.1
+Wattala Mangroves,Wildlife,Warm,Low,Short,Low,Dry,Sightseeing,4.4
+Kelaniya Raja Maha Vihara,Cultural,Warm,Low,Short,Crowded,Dry,Sightseeing,4.7
+Biyagama,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.1
+Hanwella Bridge Area,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.2
+Kaduwela,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.2
+Malabe Wetlands,Wildlife,Warm,Low,Short,Low,Wet,Sightseeing,4.3
+Jaffna Fort,Cultural,Warm,Low,Short,Moderate,Dry,Sightseeing,4.5
+Nallur Kandaswamy Temple,Cultural,Warm,Low,Short,Crowded,Dry,Sightseeing,4.7
+Keerimalai Hot Springs,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.5
+Casuarina Beach,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.6
+Point Pedro Lighthouse,Cultural,Warm,Low,Short,Low,Dry,Sightseeing,4.4
+Nagadeepa Temple,Cultural,Warm,Low,Short,Moderate,Dry,Sightseeing,4.6
+Chundikulam National Park,Wildlife,Warm,Low,Medium,Low,Dry,Safari,4.4
+Delft Island,Cultural,Warm,Low,Medium,Low,Dry,Sightseeing,4.5
+Kayts Island,Relaxation,Warm,Low,Medium,Low,Dry,Relaxing,4.3
+Analaitivu Island,Relaxation,Warm,Low,Medium,Low,Dry,Relaxing,4.2
+Vavuniya Town,Cultural,Warm,Low,Short,Low,Dry,Sightseeing,4.2
+Madukanda Vihara,Cultural,Warm,Low,Short,Low,Dry,Sightseeing,4.4
+Iranamadu Tank,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.3
+Mullaitivu Beach,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.4
+Nandikadal Lagoon,Wildlife,Warm,Low,Medium,Low,Dry,Sightseeing,4.3
+Kilinochchi War Memorial,Cultural,Warm,Low,Short,Low,Dry,Sightseeing,4.2
+Elephant Pass Lagoon,Wildlife,Warm,Low,Short,Low,Dry,Sightseeing,4.4
+Kokkilai Lagoon,Wildlife,Warm,Low,Medium,Low,Dry,Sightseeing,4.5
+Nayaru Beach,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.3
+Mullaitivu Lagoon,Wildlife,Warm,Low,Medium,Low,Dry,Sightseeing,4.4
+Mankulam,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.1
+Oddusuddan,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.1
+Puthukkudiyiruppu,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.1
+Thiruketheeswaram Temple,Cultural,Warm,Low,Short,Moderate,Dry,Sightseeing,4.6
+Mannar Fort,Cultural,Warm,Low,Short,Low,Dry,Sightseeing,4.4
+Adam’s Bridge Viewpoint,Cultural,Warm,Low,Short,Low,Dry,Sightseeing,4.5
+Giant’s Tank,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.3
+Vankalai Sanctuary,Wildlife,Warm,Low,Medium,Low,Dry,Safari,4.6
+Pesalai Beach,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.4
+Arippu Fort,Cultural,Warm,Low,Short,Low,Dry,Sightseeing,4.3
+Trincomalee Harbour,Cultural,Warm,Low,Short,Moderate,Dry,Sightseeing,4.5
+Fort Frederick,Cultural,Warm,Low,Short,Moderate,Dry,Sightseeing,4.6
+Nilaveli Lagoon,Wildlife,Warm,Low,Medium,Low,Dry,Sightseeing,4.5
+Kanniya Hot Springs,Relaxation,Warm,Low,Short,Moderate,Dry,Relaxing,4.6
+Marble Beach Trincomalee,Relaxation,Warm,Medium,Short,Moderate,Dry,Relaxing,4.7
+Seruwila Mangala Raja Maha Vihara,Cultural,Warm,Low,Short,Low,Dry,Sightseeing,4.5
+Somawathiya National Park,Wildlife,Warm,Low,Medium,Low,Dry,Safari,4.6
+Kuchchaveli Beach,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.5
+Uppuveli Beach,Relaxation,Warm,Low,Short,Moderate,Dry,Relaxing,4.6
+Sampur Beach,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.4
+Padaviya Tank,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.3
+Kebithigollewa,Cultural,Warm,Low,Short,Low,Dry,Sightseeing,4.2
+Horowpothana National Park,Wildlife,Warm,Low,Medium,Low,Dry,Safari,4.5
+Kahatagasdigiliya,Cultural,Warm,Low,Short,Low,Dry,Sightseeing,4.2
+Nochchiyagama,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.2
+Madawachchiya,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.2
+Eppawala Phosphate Mine,Cultural,Warm,Low,Short,Low,Dry,Sightseeing,4.3
+Ritigala Strict Nature Reserve,Wildlife,Cool,Low,Medium,Low,Dry,Hiking,4.7
+Kala Wewa,Relaxation,Warm,Low,Short,Low,Dry,Relaxing,4.6
+Avukana Buddha Statue,Cultural,Warm,Low,Short,Moderate,Dry,Sightseeing,4.8
