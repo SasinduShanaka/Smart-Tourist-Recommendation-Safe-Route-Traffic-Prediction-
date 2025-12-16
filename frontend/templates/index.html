@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sri Lanka Smart Tourist Assistant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            color: #2c3e50;
+        }
+        .container {
+            display: flex;
+            gap: 30px;
+            background: linear-gradient(to right, #ffffff 0%, #f8f9fa 100%);
+            padding: 30px;
+            height: 100vh;
+            overflow: hidden;
+            box-shadow: 0 0 40px rgba(0,0,0,0.1);
+        }
+        .left-panel {
+            flex: 1;
+            min-width: 400px;
+            display: flex;
+            gap: 30px;
+            overflow-y: auto;
+            height: calc(100vh - 60px);
+        }
+        .forms-section {
+            flex: 1;
+        }
+        .results-section {
+            flex: 1;
+            overflow-y: auto;
+        }
+        .right-panel {
+            width: 600px;
+            height: calc(100vh - 50px);
+            margin-top: -10px;
+        }
+        h2 {
+            color: #1a202c;
+            font-size: 1.75em;
+            margin-bottom: 25px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            border-bottom: 3px solid;
+            border-image: linear-gradient(90deg, #667eea, #764ba2) 1;
+            padding-bottom: 12px;
+        }
+        h3 {
+            color: #2d3748;
+            font-size: 1.15em;
+            margin: 25px 0 15px 0;
+            padding: 12px 0;
+            font-weight: 600;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        form {
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.08);
+        }
+        textarea {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid #cbd5e0;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 14px;
+            resize: vertical;
+            transition: all 0.2s;
+            background: white;
+        }
+        textarea:focus {
+            outline: none;
+            border-color: #3182ce;
+            box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+        }
+        select {
+            width: 200px;
+            padding: 8px 12px;
+            border: 1px solid #cbd5e0;
+            border-radius: 4px;
+            font-size: 14px;
+            background: white;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-left: 10px;
+        }
+        select:hover {
+            border-color: #3182ce;
+        }
+        select:focus {
+            outline: none;
+            border-color: #3182ce;
+            box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+        }
+        label, form > text {
+            display: inline-block;
+            font-weight: 500;
+            color: #4a5568;
+            min-width: 140px;
+            font-size: 14px;
+        }
+        .form-row {
+            margin-bottom: 15px;
+        }
+        button[type="submit"] {
+            background: #3182ce;
+            color: white;
+            padding: 10px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.2s;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+        }
+        button[type="submit"]:hover {
+            background: linear-gradient(135deg, #5568d3 0%, #6b48a8 100%);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+            transform: translateY(-1px);
+        }
+        button[type="submit"]:active {
+            transform: translateY(1px);
+        }
+        .clear-btn {
+            margin-left: 10px;
+            background: #718096;
+            color: white;
+            padding: 10px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.2s;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+        }
+        .clear-btn:hover {
+            background: #4a5568;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+        .clear-btn:active {
+            transform: translateY(1px);
+        }
+        ul {
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            list-style-type: none;
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.08);
+        }
+        ul li {
+            padding: 12px 16px;
+            margin: 8px 0;
+            background: white;
+            border-radius: 4px;
+            border-left: 4px solid #667eea;
+            font-size: 14px;
+            color: #2d3748;
+            transition: all 0.2s;
+        }
+        ul li:hover {
+            background: #edf2f7;
+            border-left-width: 4px;
+        }
+        #map {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background: #e2e8f0;
+            margin: 25px 0;
+        }
+        @media (max-width: 900px) {
+            body {
+                padding: 15px;
+            }
+            .container {
+                flex-direction: column;
+                padding: 20px;
+            }
+            .right-panel {
+                width: 100%;
+                position: relative;
+            }
+            select {
+                width: 100%;
+                margin-left: 0;
+                margin-top: 5px;
+            }
+            label, form > text {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="forms-section">
+                <h2>Sri Lanka Smart Tour Assistant</h2>
+
+                <h5>Describe your trip in your own words</h5>
+
+                <form action="/nlp" method="POST" id="nlpForm">
+                    <textarea name="user_text" rows="4" cols="50"
+                        placeholder="Example: I want cool weather, adventure places, low budget, visiting in December, and I don't like crowds">{{ user_text }}</textarea>
+                </form>
+
+                <hr>
+
+                <form method="POST" action="/recommend" id="recommendForm" autocomplete="off">
+        Weather:
+        <select name="weather" required>
+            <option value="" disabled {% if not form_data.get('weather') %}selected{% endif %}>-</option>
+            <option {% if form_data.get('weather') == 'Cool' %}selected{% endif %}>Cool</option>
+            <option {% if form_data.get('weather') == 'Warm' %}selected{% endif %}>Warm</option>
+            <option {% if form_data.get('weather') == 'Cold' %}selected{% endif %}>Cold</option>
+        </select><br><br>
+
+        Travel Style:
+        <select name="travel_style" required>
+            <option value="" disabled {% if not form_data.get('travel_style') %}selected{% endif %}>-</option>
+            <option {% if form_data.get('travel_style') == 'Adventure' %}selected{% endif %}>Adventure</option>
+            <option {% if form_data.get('travel_style') == 'Relaxation' %}selected{% endif %}>Relaxation</option>
+            <option {% if form_data.get('travel_style') == 'Cultural' %}selected{% endif %}>Cultural</option>
+            <option {% if form_data.get('travel_style') == 'Wildlife' %}selected{% endif %}>Wildlife</option>
+        </select><br><br>
+
+        Month:
+        <select name="month" required>
+            <option value="" disabled {% if not form_data.get('month') %}selected{% endif %}>-</option>
+            <option {% if form_data.get('month') == 'January' %}selected{% endif %}>January</option>
+            <option {% if form_data.get('month') == 'February' %}selected{% endif %}>February</option>
+            <option {% if form_data.get('month') == 'March' %}selected{% endif %}>March</option>
+            <option {% if form_data.get('month') == 'April' %}selected{% endif %}>April</option>
+            <option {% if form_data.get('month') == 'May' %}selected{% endif %}>May</option>
+            <option {% if form_data.get('month') == 'June' %}selected{% endif %}>June</option>
+            <option {% if form_data.get('month') == 'July' %}selected{% endif %}>July</option>
+            <option {% if form_data.get('month') == 'August' %}selected{% endif %}>August</option>
+            <option {% if form_data.get('month') == 'September' %}selected{% endif %}>September</option>
+            <option {% if form_data.get('month') == 'October' %}selected{% endif %}>October</option>
+            <option {% if form_data.get('month') == 'November' %}selected{% endif %}>November</option>
+            <option {% if form_data.get('month') == 'December' %}selected{% endif %}>December</option>
+        </select><br><br>
+
+        Budget:
+        <select name="budget" required>
+            <option value="" disabled {% if not form_data.get('budget') %}selected{% endif %}>-</option>
+            <option {% if form_data.get('budget') == 'Low' %}selected{% endif %}>Low</option>
+            <option {% if form_data.get('budget') == 'Medium' %}selected{% endif %}>Medium</option>
+            <option {% if form_data.get('budget') == 'High' %}selected{% endif %}>High</option>
+        </select><br><br>
+
+        Trip Duration:
+        <select name="trip_duration" required>
+            <option value="" disabled {% if not form_data.get('trip_duration') %}selected{% endif %}>-</option>
+            <option {% if form_data.get('trip_duration') == 'Short' %}selected{% endif %}>Short</option>
+            <option {% if form_data.get('trip_duration') == 'Medium' %}selected{% endif %}>Medium</option>
+            <option {% if form_data.get('trip_duration') == 'Long' %}selected{% endif %}>Long</option>
+        </select><br><br>
+
+        Crowd Preference:
+        <select name="crowd_level" required>
+            <option value="" disabled {% if not form_data.get('crowd_level') %}selected{% endif %}>-</option>
+            <option {% if form_data.get('crowd_level') == 'Low' %}selected{% endif %}>Low</option>
+            <option {% if form_data.get('crowd_level') == 'Moderate' %}selected{% endif %}>Moderate</option>
+            <option {% if form_data.get('crowd_level') == 'Crowded' %}selected{% endif %}>Crowded</option>
+        </select><br><br>
+                </form>
+
+                <div style="margin-top: 20px; text-align: center;">
+                    <button type="button" onclick="submitRecommendation()" style="background: #3182ce; color: white; padding: 10px 24px; border: none; cursor: pointer; border-radius: 4px; font-size: 14px; font-weight: 500;">
+                        Get Recommendations
+                    </button>
+                    <button type="button" class="clear-btn" onclick="clearForm()">Clear</button>
+                </div>
+            </div>
+
+            <div class="results-section">
+                <h2>Results</h2>
+                {% if result %}
+                    <h3>Season: {{ result.season }}</h3>
+                    <h3>Recommended Activities: {{ result.activities }}</h3>
+                    <h3>Places:</h3>
+                    <ul>
+                        {% for place in result.places %}
+                            <li>{{ place }}</li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <div style="padding: 40px 20px; text-align: center; color: #718096;">
+                        <p style="font-size: 18px; margin-bottom: 10px;">📍 No recommendations yet</p>
+                        <p style="font-size: 14px;">Fill out the form and click "Get Recommendations" to see personalized tourist destinations for your Sri Lanka trip.</p>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="right-panel">
+
+            <div id="map"></div>
+        </div>
+    </div>
+
+<script>
+    // Set recommended places before loading map scripts
+    window.recommendedPlaces = {{ places_map | tojson | safe }};
+    
+    // Submit recommendation based on which form has data
+    function submitRecommendation() {
+        const nlpText = document.querySelector('#nlpForm textarea[name="user_text"]').value.trim();
+        const weatherSelect = document.querySelector('#recommendForm select[name="weather"]').value;
+        
+        if (nlpText) {
+            // User filled NLP text, submit NLP form
+            document.getElementById('nlpForm').submit();
+        } else if (weatherSelect) {
+            // User filled dropdown form, submit that
+            document.getElementById('recommendForm').submit();
+        } else {
+            alert('Please either describe your trip in words OR select your preferences from the dropdowns.');
+        }
+    }
+    
+    // Clear form function
+    function clearForm() {
+        document.getElementById('recommendForm').reset();
+        document.getElementById('nlpForm').reset();
+        // Reload the page to clear results
+        window.location.href = window.location.pathname;
+    }
+</script>
+<script src="{{ url_for('static', filename='map.js') }}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqI9dRTlYKmjzGuPM3ecoiYcjQ063kfIc&callback=initMap" async defer></script>
+
+
+</body>
+</html>
